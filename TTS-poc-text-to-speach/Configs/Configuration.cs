@@ -3,7 +3,7 @@
     internal class Configuration
     {
         internal static Configuration Build(VoiceGender gender, int rateSpeed)
-            => new Configuration()
+            => new()
             {
                 Gender = gender,
                 Rate = rateSpeed,
@@ -11,6 +11,5 @@
 
         internal VoiceGender Gender { get; private set; } = VoiceGender.Neutral;
         internal int Rate { get; private set; } = 0;
-
     }
 }
