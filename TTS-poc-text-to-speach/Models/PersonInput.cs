@@ -1,14 +1,14 @@
 ﻿namespace TTS_poc_text_to_speach.Models
 {
-    public class PersonInput
+    internal class PersonInput
     {
-        public PersonInput(string fullName, string email)
+        internal PersonInput(string fullName, string email)
         {
             FullName = fullName;
             Email = email;
         }
 
-        public string FullName { get; set; }
-        public string Email { get; set; }
+        internal string FullName { get; set; }
+        internal string Email { get; set; }
     }
 }
